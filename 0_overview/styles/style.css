@@ -1,0 +1,61 @@
+body{
+    background-image: url(../images/back.png);
+    color: white;
+}
+
+a{
+    color:rgba(238, 10, 10, 0.884);
+}
+div{
+    color:skyblue;
+    background-color: khaki;
+    border: 2px solid;
+}
+#id{
+    color: greenyellow;
+}
+#code{
+    text-shadow: 2px 2px 2px black ;
+}
+#vscode{
+    transform: rotate(90deg) scale(1);
+    transition: 1s all;
+}
+#vscode:hover{
+    transform:rotate(30deg) scale(3) ;
+}
+
+
+
+.class{
+    color: indigo;
+}
+.message{
+    color: white;
+    background-color: gray;
+    border: 2px solid gray;
+    font-size: 150%;
+    margin: 2%;
+    padding: 1%;
+    border-radius: 5cm;
+}
+.message:hover{
+    border: 2px dashed black;
+    
+}
+.success{
+    background-color: green;
+    color: white;
+}
+.error{
+    background-color: red;
+    color: black;
+}
+.info{
+    background-color: blue;
+    color: white;
+}
+.warning{
+    background-color: yellow;
+    color: black;
+}

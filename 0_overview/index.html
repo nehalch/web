@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello world!</title>
+    <link href="./styles/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./scripts/main.js"></script>
+</head>
+
+<body>
+
+    <a target="_blank" href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program">Hello world!</a>
+
+    <p><small>
+            A "Hello, World!" program generally is a computer program that outputs or displays the message "Hello,
+            World!".
+            Such a program is very simple in most programming languages, and is often used to illustrate the basic
+            syntax of a programming language.
+            It is often the first program written by people learning to code.
+            It can also be used as a sanity test to make sure that computer software intended to compile or run source
+            code is correctly installed, and that the operator understands how to use it.
+        </small></p>
+    <Textarea></Textarea><br>
+
+    <ol>
+        <li>
+            <h1> Header </h1>
+        </li>
+        <li>
+            <h2> Header </h2>
+        </li>
+        <li>
+            <h3> Header </h3>
+        </li>
+        <li>
+            <h4> Header </h4>
+        </li>
+        <li>
+            <h5> Header </h5>
+        </li>
+        <li>
+            <h6> Header </h6>
+        </li>
+    </ol>
+
+    <ul>
+        <li id="id"> t <br> </li>
+        <li class="class"> <strong>Bold text</strong> <br> </li>
+        <li class="class"> <em>Italic text</em> <br> </li>
+        <li class="class"> <small>Small text</small> <br> </li>
+        <li class="class"> Simple text <br> </li>
+    </ul>
+
+    <table border="5">
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+        </tr>
+        <tr>
+            <td>t</td>
+            <td>a</td>
+            <td>b</td>
+            <td>l</td>
+            <td>e</td>
+        </tr>
+        <tr>
+            <td>p</td>
+            <td>i</td>
+            <td>x</td>
+            <td>a</td>
+            <td>r</td>
+        </tr>
+    </table> <br>
+
+
+    <div id="code">
+        This is vscode:<br>
+        <img id="vscode" src="./images/code.png" width=20% height=auto> <br>
+        It is your <u>best</u> friend. <br>
+
+        <input title="Just type text you wish" placeholder="Say hello to vs code...">
+    </div><br>
+
+    <div class="message">
+        Exapmle message
+    </div>
+
+    <div class="message info">
+        Hello world
+    </div>
+
+    <div class="message success" onclick="_2()">
+        Exapmle success
+    </div>
+
+    <div class="message warning">
+        Exapmle warning
+    </div>
+
+    <div class="message error">
+        Exapmle error
+    </div>
+
+    <script>
+        var elem = document.getElementsByClassName("message");
+        elem[2].innerHTML = "OFF SPAM!!!";
+        elem[2].style.color = "blue";
+    </script>
+
+    <a href="" id="aaa">1</a>
+
+    <div>
+        <button onclick="prev()"> Prev </button>
+        <img id="slider" src="http://www.sololearn.com/uploads/slider/1.jpg" width="200px" height="auto">
+        <button onclick="next()"> Next </button>
+    </div>
+
+    <form onsubmit="return validate()" method="post">
+        Number: <input type="text" name="num1" id="num1" />
+        <br />
+        Repeat: <input type="text" name="num2" id="num2" />
+        <br />
+        <input type="submit" value="Submit" />
+    </form>
+
+
+
+    <!--- HTML5 -->
+
+    <img src="./images/struckt.png" alt="">
+
+    <article>
+        <h1>Welcome HTML5</h1>
+        <section>
+            <h1>heading</h1>
+            <p>content or img</p>
+        </section>
+        <aside>secondary content</aside>
+    </article>
+
+    <div>
+        <script>
+            function allowDrop(ev) {
+                ev.preventDefault();
+            }
+            function drag(ev) {
+                ev.dataTransfer.setData("text", ev.target.id);
+            }
+            function drop(ev) {
+                ev.preventDefault();
+                var data = ev.dataTransfer.getData("text");
+                ev.target.appendChild(document.getElementById(data));
+            }
+        </script>
+
+        <div id="box" ondrop="drop(event)" ondragover="allowDrop(event)" style="border:1px solid black; 
+        width:200px; height:200px">put obuv here</div>
+
+        <img id="image"
+            src="https://www.nicholas-thomson.co.uk/images/rieker-rieker-blue-sports-shoe-with-orange-trim-and-elasticated-fastening-and-memory-foam-insole-p2084-8834_zoom.jpg"
+            draggable="true" ondragstart="drag(event)" width="150" height="auto" alt="" />
+    </div>
+
+    <svg wigh="400" height="400">
+        <circle cx="10" cy="10" r="10" fill="blue" />
+        <line x1="30" y1="30" x2="200" y2="200" style="
+            stroke: coral;
+            stroke-linecap: round;
+            stroke-width: 20;" />
+        <polyline style="stroke-linejoin:miter; 
+            stroke:rgb(235, 37, 37);
+            stroke-width: 12;
+            fill: none;" points="100,100,150,150,200,100" />
+        <rect width="150" height="150" fill="orange">
+            <animate attributeName="x" from="0" to="300" dur="10s" fill="freeze" repeatCount="9" />
+        </rect>
+    </svg>
+    <br />
+
+    <canvas id="canvas1" width="300" height="300">
+
+        <script>
+            var can = document.getElementById("canvas1");
+            var ctx = can.getContext("2d");
+            ctx.fillStyle = "white";
+            ctx.fillRect(20, 20, 100, 100);
+
+            ctx.fillStyle = "red";
+            ctx.font = "bold 22px Tahoma white";
+            ctx.textAligh = "start";
+            ctx.fillText("start", 10, 30);
+
+            ctx.translate(150, 50);
+            ctx.rotate(1);
+            ctx.scale(1.5, 4);
+            ctx.fillStyle = "blue";
+            ctx.textAligh = "after translate";
+            ctx.fillText("after translate", 20, 40);
+        </script>
+    </canvas>
+
+    <form action="">
+        <label>Your name:</label>
+        <input id="username" list="names" name="username" type="text" placeholder="username" required type="search" />
+        <datalist id="names">
+            <option value="Ira">
+            <option value="Orsana">
+            <option value="Kolya">
+            <option value="Tanya">
+        </datalist>
+        <br />
+        <input id="email" name="email" type="email" placeholder="example@example.com" />
+        <br />
+        <input id="" name="" type="" placeholder="example.com" />
+        <br />
+        <input id="tel" name="tel" type="tel" placeholder="555.555.1211" />
+        <br />
+    </form>
+
+
+</body>
+
+</html>
