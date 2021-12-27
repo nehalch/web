@@ -19,3 +19,12 @@ list.onclick = function() {
     this.textContent = listContent;
   }
 }
+
+setInterval(() => {
+  alert("23");
+}, 100000);
+
+
+function pickRandom(arr) {
+  return undefined;
+ }
