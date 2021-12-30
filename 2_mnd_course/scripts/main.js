@@ -27,4 +27,6 @@ setInterval(() => {
 
 function pickRandom(arr) {
   return undefined;
- }
+}
+ww = 12
+

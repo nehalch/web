@@ -11,6 +11,9 @@ html ul {
 html ul li {
   margin-left: 20px;
 }
+html .hm {
+  size: 12px;
+}
 html h1 {
   text-shadow: black 10px 10px 10px;
 }
