@@ -2,20 +2,21 @@
 <html lang="en-US">
 
 <head>
-    <title>Study page</title>
-    <meta name="title" content="Study page">
     <meta charset="utf-8">
-    <meta name="author" content="Chris Mills">
+
+    <title>Study page</title>
+    <link rel="Shortcut Icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <meta name="title" content="Study page">
     <meta name="description" content="This is an example page to demonstrate usage of metadata on web pages.">
+    <meta name="author" content="Andrew">
 
     <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
     <meta property="og:description" content="This is an example page to demonstrate usage of metadata on web pages.">
     <meta property="og:title" content="Metadata; The HTML &lt;head&gt;, on MDN">
 
-    <link rel="Shortcut Icon" href="./images/favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="./scripts/main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="./styles/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -23,13 +24,35 @@
         <h1>the site of future</h1>
     </header>
 
-    <nav>home _ download _ about _ us _ </nav>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our team</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <!-- A Search form is another common non-linear way to navigate through a website. -->
+
+        <form>
+            <input type="search" name="q" placeholder="Search query">
+            <input type="submit" value="Go!">
+        </form>
+    </nav>
+
 
     <main>
-        <article>article</article>
-        <section>section</section>
-        <div>div</div>
 
+        <section>
+            <h2>Some heading of the article</h2>
+            <article>The article</article>
+        </section>
+
+        <span>Inline non-semantic element to wrap.</span>
+        <br>
+        <div>Block non-semantic element to wrap.</div>
+        <hr>
+        
         <p>
             This recipe makes quick, tasty hummus, with no messing. It has been adapted from a number of different
             recipes
@@ -109,38 +132,9 @@
         <i>efjewrjiferijfoij</i>
         <b>wdlkwefkweopf</b>
         <u>wepogjewpjgj</u>
-        <!-- -- -->
 
-
-
-        <!-- Научные наименования -->
-        <p lang="ru">
-            Колибри обыкновенный (<i>архилоус обыкновенный</i>) —
-            наиболее часто встречающийся вид колибри в северо-восточной Америке.
-        </p>
-
-        <!-- Иностранные слова -->
-        <p>
-            Случился прилив иностранных слов, таких как <i lang="uk-latn">vatrushka</i>,
-            <i lang="id">nasi goreng</i> и <i lang="fr">soupe à l'oignon</i>.
-        </p>
-
-        <!-- Явно неправильное произношение или написание -->
-        <p>
-            Когда-нибудь я узнаю, как <u>гаварить</u> без ошибок.
-        </p>
-
-        <!-- Выделение ключевых слов в инструкциях -->
-        <ol>
-            <li>
-                <b>Отрежьте</b> два ломтика хлеба.
-            </li>
-            <li>
-                <b>Добавьте</b> кусочек помидора и лист латука между ломтями хлеба.
-            </li>
-        </ol>
         <div>
-            <h1>Basic HTML Animals</h1>
+            <h2>Basic HTML Animals</h2>
             <p>This is the first paragraph in our page. It introduces our animals.</p>
             <h2>The Llama </h2>
 
@@ -156,7 +150,7 @@
             </p>
         </div>
         <div>
-            <h1>Looking at lists</h1>
+            <h2>Looking at lists</h2>
 
             <p>Turn the following list of my favorite vegetables into an unordered list.</p>
             <ul>
@@ -182,7 +176,7 @@
             </canvas>
         </div>
 
-        <h1>Information on Whales</h1>
+        <h2>Information on Whales</h2>
 
         <p>For more information on our conservation activities and which Whales we study,
             see our <a target="_blank">Whales page</a>.</p>
@@ -222,15 +216,18 @@
 
         <p>I think <abbr title="Reverend">Rev.</abbr> Green did it in the kitchen with the chainsaw.</p>
 
-
     </main>
 
     <aside>
-        <ol>
-            <li>123</li>
-            <li>234</li>
-            <li>346</li>
-        </ol>
+        <h2>Related</h2>
+
+        <ul>
+            <li><a href="#">Oh I do like to be beside the seaside</a></li>
+            <li><a href="#">Oh I do like to be beside the sea</a></li>
+            <li><a href="#">Although in the North of England</a></li>
+            <li><a href="#">It never stops raining</a></li>
+            <li><a href="#">Oh well...</a></li>
+        </ul>
     </aside>
 
     <footer>
@@ -247,6 +244,9 @@
                 <li>Email: me@grim-north.co.uk</li>
             </ul>
         </address>
+
+        <p>©Copyright 2050 by nobody. All rights reversed.</p>
+
     </footer>
     <script src="./scripts/main.js"></script>
 </body>

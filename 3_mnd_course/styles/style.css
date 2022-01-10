@@ -1,0 +1,11 @@
+html {
+  background-color: #2e2e2e;
+  color: whitesmoke;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+html h1 {
+  text-shadow: black 10px 10px 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
