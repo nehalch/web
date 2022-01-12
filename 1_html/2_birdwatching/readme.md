@@ -1,0 +1,1 @@
+This is a practice for applying html5 structure with a real example.
