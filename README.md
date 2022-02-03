@@ -7,7 +7,7 @@
 
 #### We can hide anything, even code!
 
-    ``` ruby
+    ```ruby
       puts "Hello World"
     ```
 
