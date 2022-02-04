@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        html{
+            font-weight:normal;
+        }
         body{
-            font-weight: bold;
+            /* font-weight: bold; */
         }
         p{
             color: red;
@@ -17,37 +20,45 @@
             color: white;
         }
 
+
+
+        /* inherit */
         .a{
             color:green;
             font-style: italic;
         }
-        /* inherit */
         .a p{
             color:inherit;
             font-style: inherit;
         }
-
+        /* initial */
         .b{
             color: yellow;
         }
-        /* initial */
         .b p{
             color: initial;
             font-weight: initial;
         }
-
+        /* unset */
         .c{
             color: pink;
         }
-
         .c p{
             color: unset;
         }
+        /* revert */
+        .d{
+            color:blueviolet;
+        }
+        .d p{
+            color: revert;
+        }
+
     </style>
 </head>
 <body>
 
-    just text in body style
+    
 
 
     <p>
@@ -79,19 +90,51 @@
         </p>
     </div>    
 
-    not initiial style
+    just text in body style
 
     <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
 
     <div class="c">
         c class
-        <p style="color: unset;">
+        <p>
             unset with parent c
         </p>
     </div>
-    <p style="color: unset;">
+
+    <p style="all: unset;">
         unset without parent
     </p>
 
+    <br>
+    
+    just text in body style
+
+    <hr>
+    
+    <div class="d">
+        d class
+        <p>
+            revert with parent d
+        </p>
+    </div>
+    <p style="all: revert;">
+        revert without parent
+    </p>
+    just text in body style
 </body>
 </html>
+
+
+<!-- 
+    inheritance
+    inherit -parent
+    initial - initial style
+    unset - parent | initial
+    revert - parent | browser style
+ -->
