@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-weight: bold;
+        }
+        p{
+            color: red;
+        }
+
+        .non{
+            color: white;
+        }
+
+        .a{
+            color:green;
+            font-style: italic;
+        }
+        /* inherit */
+        .a p{
+            color:inherit;
+            font-style: inherit;
+        }
+
+        .b{
+            color: yellow;
+        }
+        /* initial */
+        .b p{
+            color: initial;
+            font-weight: initial;
+        }
+
+        .c{
+            color: pink;
+        }
+
+        .c p{
+            color: unset;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        p
+    </p>
+
+    <div class="non">
+        non class
+        <p>
+            p in non
+        </p>
+    </div>
+
+
+    <hr>
+
+    <div class="a">
+        a class
+        <p>inherit</p>
+    </div>
+
+    <hr>
+
+    <div class="b">
+        b class
+        <p>
+            initial
+            
+        </p>
+    </div>    
+
+    not initiial style
+
+    <hr>
+
+    <div class="c">
+        c class
+        <p style="color: unset;">
+            unset with parent c
+        </p>
+    </div>
+    <p style="color: unset;">
+        unset without parent
+    </p>
+
+</body>
+</html>
