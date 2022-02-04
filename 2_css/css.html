@@ -9,15 +9,14 @@
     unset - parent || zero style
     revert - parent || browser style
 */
+
+
  -->
 
 <head>
     <meta charset="utf-8">
     <title>Getting started with CSS</title>
     <style>
-
-
-
 
 
 
@@ -69,7 +68,9 @@ body h1 + p .special {
   padding: 5px;
 }
 
-
+p{
+  color: blue;
+}
 
 
 
@@ -82,6 +83,22 @@ body h1 + p .special {
 */
 
 
+/* 
+  cascade
+    Source order
+    Specificity
+    Importance
+
+
+*/
+
+/* 
+Specificity
+    0001 - selector
+    0010 - class, sub-selectors 
+    0100 - id
+    1000 - rule inside an element's style attribute
+*/
 
 
 
@@ -115,6 +132,11 @@ body h1 + p .special {
         <li>Item <em>three</em></li>
     </ul>
 
+    <p>
+    <p style="color: red;">
+      123
+    </p>
+   </p>
 </body>
 
 </html>
