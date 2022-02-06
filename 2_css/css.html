@@ -102,11 +102,31 @@ Specificity
 */
 
 
+/*
+h1, .h {}
+*/
 
 
 
+.notebox {
+  border: 4px solid #666;
+  padding: .5em;
+  margin: 10px;
+}
 
+.notebox.warning {
+  border-color: orange;
+  font-weight: bold;
+}
 
+.notebox.danger {
+  border-color: red;
+  font-weight: bold;
+}
+
+* {
+  /* all:revert !important; */
+}
 
 
 
@@ -138,6 +158,24 @@ Specificity
       123
     </p>
    </p>
+
+
+
+  <div class="notebox">
+    This is an informational note.
+  </div>
+  
+  <div class="notebox warning">
+    This note shows a warning.
+  </div>
+  
+  <div class="notebox danger">
+    This note shows danger!
+  </div>
+  
+  <div class="danger">
+    This won't get styled — it also needs to have the notebox class
+  </div>
 </body>
 
 </html>
