@@ -124,16 +124,27 @@ h1, .h {}
   font-weight: bold;
 }
 
-* {
-  /* all:revert !important; */
+
+
+
+
+a[href="https://google.com/"]{
+  color: black;
 }
 
+/*
+  atr selectors
+    a[atr]
+    a[atr ="value"]
+    a[atr~="value_with_end_space "]
+    a[atr|="value_with_end_dash"]
+    
+    a[atr^="value_starts_with"]
+    a[atr$="value_ends_with"]
+    a[atr*="part_of_value"]
 
-
-
-
-
-
+    a[atr="value_middle_case" i] or 's'
+*/
 
 </style>
 </head>
@@ -173,6 +184,8 @@ h1, .h {}
     This note shows danger!
   </div>
   
+  <a href="https://google.com/">google link</a>
+
   <div class="danger">
     This won't get styled — it also needs to have the notebox class
   </div>
