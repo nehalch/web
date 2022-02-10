@@ -20,7 +20,7 @@
     10000 - parameter: value !important;
 */
 /*
-  atr selectors
+  Attribute selectors
     a[atr]
     a[atr ="value"]
     a[atr~="value_with_end_space "]
@@ -64,10 +64,10 @@
 
 
 
-
-
 h1 {
   color: red;
+  text-decoration: underline;
+  text-decoration-color: blue;
 }
 
 p,
