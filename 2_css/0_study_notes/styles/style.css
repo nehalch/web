@@ -1,103 +1,25 @@
-h1 {
-  color: red;
-}
-p,
-li {
-  color: green;
-}
-li {
-  list-style-type: none;
-}
-li.special,
-span.special {
-  color: orange;
-  font-weight: bold;
-}
-li em {
-  color: rebeccapurple;
-}
-h1+p {
-  font-size: 200%;
-}
-p span {
-  color: red;
-}
-a:link {
-  color: pink;
-}
-a:visited {
-  color: green;
-}
-a:hover {
-  text-decoration: none;
-}
-body h1+p .special {
-  color: yellow;
-  background-color: black;
-  padding: 5px;
-}
-p {
-  color: blue;
-}
 /*
-    inheritance
+  inheritance
     inherit - parent parameter
     initial - zero style
     unset - parent || zero style
     revert - parent || browser style
 */
-
-
-    /* 
+/* 
   cascade
     Source order
     Specificity
     Importance
-
-
 */
-
-    /* 
-Specificity
+/* 
+  Specificity
     0001 - selector
     0010 - selector.class, selector:sub-selectors 
     0100 - #id
     1000 - rule inside an element's style attribute
     10000 - parameter: value !important;
 */
-
-
-    /*
-h1, .h {}
-*/
-
-
-
-    .notebox {
-      border: 4px solid #666;
-      padding: .5em;
-      margin: 10px;
-    }
-
-    .notebox.warning {
-      border-color: orange;
-      font-weight: bold;
-    }
-
-    .notebox.danger {
-      border-color: red;
-      font-weight: bold;
-    }
-
-
-
-
-
-    a[href="https://google.com/"] {
-      color: black;
-    }
-
-    /*
+/*
   atr selectors
     a[atr]
     a[atr ="value"]
@@ -110,7 +32,6 @@ h1, .h {}
 
     a[atr="value_middle_case" i] or 's'
 */
-
 /*
   pseudo-class
     a:pseudo-class
@@ -127,21 +48,93 @@ h1, .h {}
     a:visited {} // visited link
 
     a::before { content: "This should show before the other content."}
-    a::after { content: "This should show before the other content."}    
-}   
+    a::after { content: "This should show before the other content."}
+*/
+/*
+  Pseudo-elements
+    article p::first-line{}
+*/
+/* 
+  combinators
+    .parent .parent .element {}
+    .parent > .child {}  
+    .first_sister + .second_sister {}
+    .first_sister ~ .any_sister {}
+*/
 
-  */
 
-  /*
-    Pseudo-elements
-      article p::first-line{}
 
-  */
 
-  /* 
-    combinators
-      .parent .parent .element {}
-      .parent > .child {}  
-      .first_sister + .second_sister {}
-      .first_sister ~ .any_sister {}
-  */
+
+h1 {
+  color: red;
+}
+
+p,
+li {
+  color: green;
+}
+
+li {
+  list-style-type: none;
+}
+
+li.special,
+span.special {
+  color: orange;
+  font-weight: bold;
+}
+
+li em {
+  color: rebeccapurple;
+}
+
+h1+p {
+  font-size: 200%;
+}
+
+p span {
+  color: red;
+}
+
+a:link {
+  color: pink;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body h1+p .special {
+  color: yellow;
+  background-color: black;
+  padding: 5px;
+}
+
+p {
+  color: blue;
+}
+
+.notebox {
+  border: 4px solid #666;
+  padding: .5em;
+  margin: 10px;
+}
+
+.notebox.warning {
+  border-color: orange;
+  font-weight: bold;
+}
+
+.notebox.danger {
+  border-color: red;
+  font-weight: bold;
+}
+
+a[href="https://google.com/"] {
+  color: black;
+}
