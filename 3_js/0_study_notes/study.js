@@ -18,4 +18,11 @@ console.log(world);
 hello_world = hello + ' ' + world;
 console.log(hello_world);
 
+
+let text = `This is a multiline
+string that
+just works!`
+let language = "JavaScript";
+`I am learning ${language}`; // like in rust
+
 ////////none
