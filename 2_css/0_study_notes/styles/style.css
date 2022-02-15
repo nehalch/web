@@ -146,3 +146,7 @@ a[href="https://google.com/"] {
 .box {
   display: flex;
 }
+.box > * {
+  border: 1px solid black;
+  margin: 4px;
+}
