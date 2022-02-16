@@ -150,3 +150,29 @@ a[href="https://google.com/"] {
   border: 1px solid black;
   margin: 4px;
 }
+
+
+.box {
+  /* height and width are applied not for content, for border layout */
+  box-sizing: border-box;
+}
+/* alternative box model for all html
+  html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+*/
+.box {
+  border: 5px solid rebeccapurple;
+  background-color: lightgray;
+  padding: 40px;
+  margin: 40px;
+  width: 300px;
+  height: 150px;
+}
+
+.alternate {
+  box-sizing: border-box;
+}
