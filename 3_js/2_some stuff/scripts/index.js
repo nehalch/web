@@ -1,13 +1,25 @@
-import { renderTableRow } from "./nutrition.js"
+import {getNumberOfChars, getFirstChar, getLastChar, getLower, getUpper, getCapitalized} from "./variations.js";
 
+const answer1 = document.querySelector("#answer1");
+const answer2 = document.querySelector("#answer2");
+const answer3 = document.querySelector("#answer3");
+const answer4 = document.querySelector("#answer4");
+const answer5 = document.querySelector("#answer5");
+const answer6 = document.querySelector("#answer6");
 
-let htmlForCarbs = renderTableRow("Carbs", "17g");
-let htmlForProtein = renderTableRow("Protein", "19g");
-let htmlForFat = renderTableRow("Fat", "5g");
+const name = document.querySelector("#your-name");
 
-const tbody = document.querySelector("#nutrition-table tbody");
-tbody.insertAdjacentHTML("beforeend", htmlForCarbs);
-tbody.insertAdjacentHTML("beforeend", htmlForProtein);
-tbody.insertAdjacentHTML("beforeend", htmlForFat);
+name.addEventListener("keyup", () => {
+    const value = name.value;
 
-console.log("Hello world;");
+    answer1.textContent = getNumberOfChars(value);
+    answer2.textContent = getFirstChar(value);
+    answer3.textContent = getLastChar(value);
+    answer4.textContent = getLower(value);
+    answer5.textContent = getUpper(value);
+    if (value) {
+        answer6.textContent = getCapitalized(value);
+    } else {
+        answer6.textContent = "";
+    }
+});
