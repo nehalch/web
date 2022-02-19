@@ -1,8 +1,9 @@
 # JS notes
 ## Data types
-- Number
+- Number + NaN
 - String
-
+- Object + null
+- Undefined
 
 ## API
 - DOM

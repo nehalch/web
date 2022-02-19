@@ -33,20 +33,24 @@ for (const fruit of fruits) {
 }
 
 
-const resetParas = document.querySelectorAll('.resultParas p');
-for (const resetPara of resetParas) {
-  resetPara.textContent = '';
-}
-const resetParas = document.querySelector('.resultParas p');
+// const resetParas = document.querySelectorAll('.resultParas p');
 
-guessField.focus();
+// for (const resetPara of resetParas) {
+//   resetPara.textContent = '';
+// }
 
-guesses.style.backgroundColor = 'yellow';
-guesses.style.fontSize = '200%';
-guesses.style.padding = '10px';
-guesses.style.boxShadow = '3px 3px 6px black';
+// guessField.focus();
+
+// guesses.style.backgroundColor = 'yellow';
+// guesses.style.fontSize = '200%';
+// guesses.style.padding = '10px';
+// guesses.style.boxShadow = '3px 3px 6px black';
 
 
-guesses.textContent = 'Where is my paragraph?';
+// guesses.textContent = 'Where is my paragraph?';
 
-guessField.value = 'Hello';
+// guessField.value = 'Hello';
+
+let a = 12;
+console.log(typeof (a));
+console.log(typeof (a.toString()));
