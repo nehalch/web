@@ -8,3 +8,8 @@
 - DOM
 - BOM
 - Third-party API
+
+
+## JS logic
+
+![js schema](./js.jpeg)
