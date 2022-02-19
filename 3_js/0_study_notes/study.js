@@ -26,3 +26,27 @@ let language = "JavaScript";
 `I am learning ${language}`; // like in rust
 
 ////////none
+
+const fruits = ['apples', 'bananas', 'cherries'];
+for (const fruit of fruits) {
+  console.log(fruit);
+}
+
+
+const resetParas = document.querySelectorAll('.resultParas p');
+for (const resetPara of resetParas) {
+  resetPara.textContent = '';
+}
+const resetParas = document.querySelector('.resultParas p');
+
+guessField.focus();
+
+guesses.style.backgroundColor = 'yellow';
+guesses.style.fontSize = '200%';
+guesses.style.padding = '10px';
+guesses.style.boxShadow = '3px 3px 6px black';
+
+
+guesses.textContent = 'Where is my paragraph?';
+
+guessField.value = 'Hello';
