@@ -51,6 +51,16 @@ for (const fruit of fruits) {
 
 // guessField.value = 'Hello';
 
-let a = 12;
-console.log(typeof (a));
-console.log(typeof (a.toString()));
+let a1 = 12;
+let a2 = a1.toString()
+
+console.log(typeof (a1));
+console.log(typeof (a2));
+
+
+
+let b1 = "123";
+let b2 = Number.parseInt(b1, 10);
+
+console.log(typeof (b1));
+console.log(typeof (b2));
