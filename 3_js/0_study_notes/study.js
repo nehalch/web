@@ -59,8 +59,15 @@ console.log(typeof (a2));
 
 
 
-let b1 = "123";
+let b1 = "101";
 let b2 = Number.parseInt(b1, 10);
+let b3 = Number.parseInt(b1, 2);
 
 console.log(typeof (b1));
 console.log(typeof (b2));
+console.log(b2);
+console.log(b3);
+
+
+let b4 = 4 % 3;
+console.log(b4);
