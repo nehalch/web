@@ -71,3 +71,5 @@ console.log(b3);
 
 let b4 = 4 % 3;
 console.log(b4);
+let a = "hello";
+console.log(a);
