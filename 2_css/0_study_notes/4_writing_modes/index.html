@@ -1,31 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-             display: flex;
+        .wrapper {
+
+            display: flex;
         }
+
         .box {
-  inline-size: 150px;
-  border: 5px black solid;
-}
+            margin: 23px;
+            inline-size: 150px;
+            border: 5px black solid;
+        }
 
-.horizontal {
-  writing-mode: horizontal-tb;
+        .horizontal {
+            writing-mode: horizontal-tb;
 
-}
+        }
 
-.vertical {
-  writing-mode: vertical-rl;
-}
-    
+        .vertical {
+            writing-mode: vertical-rl;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
     </style>
 </head>
+
 <body>
+    <img src="./horizontal-tb.png" alt="img)">
+    <p>
+    <table>
+        <thead>
+            <tr>
+                <th>physical parameter</th>
+                <th>logical parameter (для writing-mode)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    width
+                </td>
+                <td>
+                    block-size
+                </td>
+            </tr>
+            <tr>
+                <td>heigth</td>
+                <td>inline-size</td>
+            </tr>
+            <tr>
+                <td>margin-top</td>
+                <td>margin-block-start</td>
+            </tr>
+            <tr>
+                <td>padding-left</td>
+                <td>padding-inline-start</td>
+            </tr>
+            <tr>
+                <td>border-bottom</td>
+                <td>border-block-end</td>
+            </tr>
+        </tbody>
+    </table>
+    </p>
     <div class="wrapper">
         <div class="box horizontal">
             <h2>Heading</h2>
@@ -39,4 +84,5 @@
         </div>
     </div>
 </body>
+
 </html>
