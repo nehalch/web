@@ -73,3 +73,11 @@ let b4 = 4 % 3;
 console.log(b4);
 let a = "hello";
 console.log(a);
+
+/*
+js
+let const
+if
+bool
+%2 even odd
+*/
