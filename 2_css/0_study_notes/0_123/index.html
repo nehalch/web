@@ -7,6 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        html {
+
+            font-size: 15px;
+        }
+
+        li {
+            font-size: 80%;
+        }
+
+        .ems li {
+            font-size: 1.3em;
+        }
+
+        .rems li {
+            font-size: 1.3rem;
+        }
+
+
+
         /* 
         values & units
         */
@@ -14,14 +33,168 @@
             color: black;
             background-color: rgb(197, 93, 161);
         }
+
+        td,
+        th {
+            border: black 1px solid;
+        }
     </style>
 </head>
 
 
 
-<!--  -->
 <body>
     <h1>123</h1>
+
+
+
+    <h2>Absolute length units</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Unit</th>
+                <th>Name</th>
+                <th>Equivalent to</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>cm</code></td>
+                <td>Centimeters</td>
+                <td>1cm = 37.8px = 25.2/64in</td>
+            </tr>
+            <tr>
+                <td><code>mm</code></td>
+                <td>Millimeters</td>
+                <td>1mm = 1/10th of 1cm</td>
+            </tr>
+            <tr>
+                <td><code>Q</code></td>
+                <td>Quarter-millimeters</td>
+                <td>1Q = 1/40th of 1cm</td>
+            </tr>
+            <tr>
+                <td><code>in</code></td>
+                <td>Inches</td>
+                <td>1in = 2.54cm = 96px</td>
+            </tr>
+            <tr>
+                <td><code>pc</code></td>
+                <td>Picas</td>
+                <td>1pc = 1/6th of 1in</td>
+            </tr>
+            <tr>
+                <td><code>pt</code></td>
+                <td>Points</td>
+                <td>1pt = 1/72th of 1in</td>
+            </tr>
+            <tr>
+                <td><code>px</code></td>
+                <td>Pixels</td>
+                <td>1px = 1/96th of 1in</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Relative length units</h2>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Unit</th>
+                <th scope="col">Relative to</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>em</code></td>
+                <td>
+                    Font size of the parent, in the case of typographical properties like
+                    <code><a href="/en-US/docs/Web/CSS/font-size">font-size</a></code>, and font size of the element
+                    itself,
+                    in the case of other properties
+                    like <code><a href="/en-US/docs/Web/CSS/width">width</a></code>.
+                </td>
+            </tr>
+            <tr>
+                <td><code>ex</code></td>
+                <td>x-height of the element's font.</td>
+            </tr>
+            <tr>
+                <td><code>ch</code></td>
+                <td>The advance measure (width) of the glyph "0" of the element's font.</td>
+            </tr>
+            <tr>
+                <td><code>rem</code></td>
+                <td>Font size of the root element.</td>
+            </tr>
+            <tr>
+                <td><code>lh</code></td>
+                <td>Line height of the element.</td>
+            </tr>
+            <tr>
+                <td><code>vw</code></td>
+                <td>1% of the viewport's width.</td>
+            </tr>
+            <tr>
+                <td><code>vh</code></td>
+                <td>1% of the viewport's height.</td>
+            </tr>
+            <tr>
+                <td><code>vmin</code></td>
+                <td>1% of the viewport's smaller dimension.</td>
+            </tr>
+            <tr>
+                <td><code>vmax</code></td>
+                <td>1% of the viewport's larger dimension.</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>% - relative to some other value like parent</p>
+
+    <ul class="ems">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three
+            <ul>
+                <li>Three A</li>
+                <li>Three B
+                    <ul>
+                        <li>Three B 2</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul class="rems">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three
+            <ul>
+                <li>Three A</li>
+                <li>Three B
+                    <ul>
+                        <li>Three B 2</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three
+            <ul>
+                <li>Three A</li>
+                <li>Three B
+                    <ul>
+                        <li>Three B 2</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
 </body>
 
 </html>
