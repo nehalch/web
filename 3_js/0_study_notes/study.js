@@ -74,10 +74,15 @@ console.log(b4);
 let a = "hello";
 console.log(a);
 
-/*
-js
+/*js
+
 let const
 if
 bool
 %2 even odd
+
+const arr
+arr. length 
+arr. push return length
+arr. forEach()
 */
