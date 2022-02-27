@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button_A">Press me</button>
+    <h3 id="heading_A"></h3>
+<script>
+    const buttonA = document.querySelector('#button_A');
+    const headingA = document.querySelector('#heading_A');
+
+    buttonA.onclick = () => {
+        const name = prompt('What is your name?');
+        alert(`Hello ${name}, nice to see you!`);
+        headingA.textContent = `Welcome ${name}`;
+    }
+
+    let varblName_123 = "varbl";
+    alert(varblName_123);
+</script>
+</body>http://127.0.0.1:3003/3_js/0_study_notes/index.html
+</html>

@@ -76,10 +76,14 @@ console.log(a);
 
 /*js
 
-let const
+
+types
+
 if
 bool
 %2 even odd
+
+
 
 const arr
 arr. length 
