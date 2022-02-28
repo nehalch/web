@@ -63,6 +63,11 @@ let b1 = "101";
 let b2 = Number.parseInt(b1, 10);
 let b3 = Number.parseInt(b1, 2);
 
+1.2134.toFixed(2);
+Number('123');
+1++;
+
+
 console.log(typeof (b1));
 console.log(typeof (b2));
 console.log(b2);

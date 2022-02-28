@@ -12,6 +12,7 @@ no "var" varbl!!!
 
 ### Data types
 - Number + NaN
+- BigInt (BigInt(2) or 2n)
 - String
 - Boolean
 - Arrays
