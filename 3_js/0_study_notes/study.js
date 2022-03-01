@@ -47,6 +47,11 @@ for (const fruit of fruits) {
 // guesses.style.boxShadow = '3px 3px 6px black';
 
 
+
+
+
+
+
 // guesses.textContent = 'Where is my paragraph?';
 
 // guessField.value = 'Hello';
@@ -91,6 +96,7 @@ bool
 
 
 const arr
+
 arr. length 
 arr. push return length
 arr. forEach()
