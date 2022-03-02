@@ -52,7 +52,18 @@
                         }
         </script>
     </div>
-    
+    <div>
+        <button class="str_btn">Press me</button>
+    </div>
+    <script>
+        const button = document.querySelector('.str_btn');
+        function greet() {
+            const name = prompt('What is your name?');
+            alert(`Hello ${name}, nice to see you!`);
+        }
 
+        button.addEventListener('click', greet);
+
+    </script>
 </body>
 </html>
