@@ -84,6 +84,14 @@ console.log(b4);
 let a = "hello";
 console.log(a);
 
+
+
+// str.includes('zilla')
+// str.startsWith('zilla')
+// str.endsWith('zilla')
+// str.slice(1, 4)
+// str..replace('moz','van')
+
 /*js
 
 
