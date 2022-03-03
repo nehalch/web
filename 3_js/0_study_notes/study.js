@@ -72,7 +72,12 @@ let b3 = Number.parseInt(b1, 2);
 Number('123');
 1++;
 
+let a = document.querySelector("")
 
+const list = document.createElement('p');
+list.textContent = "123";
+document.querySelector("body").appendChild(list);
+  
 console.log(typeof (b1));
 console.log(typeof (b2));
 console.log(b2);
@@ -91,6 +96,7 @@ console.log(a);
 // str.endsWith('zilla')
 // str.slice(1, 4)
 // str..replace('moz','van')
+// str..indexOf('char')
 
 /*js
 
