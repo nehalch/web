@@ -36,9 +36,7 @@
             object-fit: fill;
         }
 
-
-
-
+        /* ------------------------------------------------------------- */
         .wrapper2 {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -65,6 +63,47 @@
         textarea {
             overflow: auto;
         }
+
+        /* ------------------------------------------------------------- */
+        input[type="text"],
+        input[type="email"] {
+            border: 2px solid #000;
+            margin: 0 0 1em 0;
+            padding: 10px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            border: 3px solid #333;
+            background-color: #999;
+            border-radius: 5px;
+            padding: 10px 2em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #333;
+        }
+
+        /* ------------------------------------------------------------- */
+        .myform {
+            border: 2px solid #000;
+            padding: 5px;
+        }
+
+        .myform input {
+            font-size: 1em;
+            padding: 10px;
+
+        }
+
+        .myform input[type="submit"] {
+            color: white;
+            background-color: rebeccapurple;
+            border: none;
+            border-radius: 5px;
+        }
     </style>
 </head>
 
@@ -89,7 +128,25 @@
         <fieldset>123</fieldset>
         <legend>123</legend>
     </div>
+    <div>
+        <form>
+            <div><label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div><label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+
+            <div class="buttons"><input type="submit" value="Submit"></div>
+        </form>
+    </div>
     <a href="https://necolas.github.io/normalize.css/"> Normalize CSS before starting project.</a>
+    <form method="post" action="" class="myform">
+        <div><label for="fldSearch">Keywords</label>
+            <input type="search" id="fldSearch" name="keywords">
+            <input type="submit" name="btnSubmit" value="Search">
+        </div>
+    </form>
 </body>
 
 </html>
