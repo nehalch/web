@@ -90,7 +90,7 @@ let a = "hello";
 console.log(a);
 
 
-
+// str.split(",")
 // str.includes('zilla')
 // str.startsWith('zilla')
 // str.endsWith('zilla')
@@ -113,5 +113,26 @@ const arr
 
 arr. length 
 arr. push return length
+cities.unshift('Edinburgh'); //push as first item;
+cities.shift(); // remove first element
+cities.splice(index, 2); // remove index + 1 el
 arr. forEach()
+
+.pop //delete last item
+
+.map // func for each item
+
+cities.filter(isLong) // func filter if return true
+
+
+cities.join(',') //separate arr with comas as str
+
+dogNames.toString(); // arr to string with commas
+
 */
+
+const birds = ['Parrot', 'Falcon', 'Owl'];
+
+for (const bird of birds) {
+  console.log(bird);
+}
