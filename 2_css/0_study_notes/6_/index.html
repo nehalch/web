@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper1 {
+            display: flex;
+            margin: 40px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 2px black solid;
+            margin: 5px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .cover {
+            object-fit: cover;
+        }
+
+        .contain {
+            object-fit: contain;
+        }
+
+        .fill {
+            object-fit: fill;
+        }
+
+
+
+
+        .wrapper2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 200px 200px;
+            gap: 20px;
+        }
+
+        .wrapper2>div {
+            background-color: rebeccapurple;
+            border-radius: .5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper1">
+        <div class="box"><img src="../3_backgroung/background.jpeg" alt="balloons" class="cover"> cover</div>
+        <div class="box"><img src="../3_backgroung/background.jpeg" alt="balloons" class="contain"> contain</div>
+        <div class="box"><img src="../3_backgroung/background.jpeg" alt="balloons" class="fill"> fill </div>
+    </div>
+
+    <div class="wrapper2">
+        <img src="../3_backgroung/star.png" alt="star">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div>
+        <input type="text">
+        <textarea name="123" id="123" cols="20" rows="10">123</textarea>
+        <fieldset>123</fieldset>
+        <legend>123</legend>
+    </div>
+</body>
+
+</html>
