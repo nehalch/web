@@ -136,3 +136,5 @@ const birds = ['Parrot', 'Falcon', 'Owl'];
 for (const bird of birds) {
   console.log(bird);
 }
+
+let greeting = ( isBirthday ) ? 'Happy birthday Mrs. Smith — we hope you have a great day!' : 'Good morning Mrs. Smith.';
