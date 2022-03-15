@@ -12,21 +12,21 @@
 
     <div>
         <div>
-                <button id="button_A">Press me</button>
-                <h3 id="heading_A"></h3>
+            <button id="button_A">Press me</button>
+            <h3 id="heading_A"></h3>
         </div>
         <script>
-                    const buttonA = document.querySelector('#button_A');
-                        const headingA = document.querySelector('#heading_A');
+            const buttonA = document.querySelector('#button_A');
+            const headingA = document.querySelector('#heading_A');
 
-                        buttonA.onclick = () => {
-                            const name = prompt('What is your name?');
-                            alert(`Hello ${name}, nice to see you!`);
-                            headingA.textContent = `Welcome ${name}`;
-                        }
+            buttonA.onclick = () => {
+                const name = prompt('What is your name?');
+                alert(`Hello ${name}, nice to see you!`);
+                headingA.textContent = `Welcome ${name}`;
+            }
 
-                        let varblName_123 = "varbl";
-                        alert(varblName_123);
+            let varblName_123 = "varbl";
+            alert(varblName_123);
         </script>
     </div>
 
@@ -36,20 +36,20 @@
             <p class="machine">The machine is stopped.</p>
         </div>
         <script>
-                    const btn = document.querySelector('button.machine');
-                        const txt = document.querySelector('p.machine');
+            const btn = document.querySelector('button.machine');
+            const txt = document.querySelector('p.machine');
 
-                        btn.addEventListener('click', updateBtn);
+            btn.addEventListener('click', updateBtn);
 
-                        function updateBtn() {
-                            if (btn.textContent === 'Start machine') {
-                                btn.textContent = 'Stop machine';
-                                txt.textContent = 'The machine has started!';
-                            } else {
-                                btn.textContent = 'Start machine';
-                                txt.textContent = 'The machine is stopped.';
-                            }
-                        }
+            function updateBtn() {
+                if (btn.textContent === 'Start machine') {
+                    btn.textContent = 'Stop machine';
+                    txt.textContent = 'The machine has started!';
+                } else {
+                    btn.textContent = 'Start machine';
+                    txt.textContent = 'The machine is stopped.';
+                }
+            }
         </script>
     </div>
     <div>
@@ -75,29 +75,35 @@
             <option value="snowing">Snowing</option>
             <option value="overcast">Overcast</option>
         </select>
-        
+
         <p class="weather"></p>
     </div>
     <script>
-        const select = document.querySelector('select');
-            const para = document.querySelector('p.weather');
-            select.addEventListener('change', setWeather);
-            function setWeather() {
-                const choice = select.value;
+        const select = document.querySelector('#weather');
+        const para = document.querySelector('p.weather');
+        select.addEventListener('change', setWeather);
+        function setWeather() {
+            const choice = select.value;
 
-                if (choice === 'sunny') {
+            switch (choice) {
+                case 'sunny':
                     para.textContent = 'It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.';
-                } else if (choice === 'rainy') {
+                    break;
+                case 'rainy':
                     para.textContent = 'Rain is falling outside; take a rain coat and an umbrella, and don\'t stay out for too long.';
-                } else if (choice === 'snowing') {
+                    break;
+                case 'snowing':
                     para.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
-                } else if (choice === 'overcast') {
+                    break;
+                case 'overcast':
                     para.textContent = 'It isn\'t raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.';
-                } else {
+                    break;
+                default:
                     para.textContent = '';
-                }
             }
+        }
 
     </script>
 </body>
+
 </html>
