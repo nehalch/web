@@ -154,3 +154,35 @@ for (const bird of birds) {
 let greeting = ( isBirthday ) ? 'Happy birthday Mrs. Smith — we hope you have a great day!' : 'Good morning Mrs. Smith.';
 
 
+function hello(name='world') {
+  console.log(`Hello ${name}!`);
+}
+
+function myFunction() {
+  alert('hello');
+}
+function() {
+  alert('hello');
+}
+
+textBox.addEventListener('keydown', (event) => { console.log(`You pressed "${event.key}".`); });
+textBox.addEventListener('keydown', event => console.log(`You pressed "${event.key}".`));
+
+const originals = [1, 2, 3];
+const doubled = originals.map(item => item * 2);
+console.log(doubled); // [2, 4, 6]
+
+
+
+
+
+/*
+<input id="textBox" type="text"></input>
+<div id="output"></div>
+
+const textBox = document.querySelector("#textBox");
+const output = document.querySelector("#output");
+
+textBox.addEventListener('keydown', event => output.textContent = `You pressed "${event.key}".`);
+
+ */
