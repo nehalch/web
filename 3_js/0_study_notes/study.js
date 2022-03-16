@@ -26,12 +26,26 @@ let language = "JavaScript";
 `I am learning ${language}`; // like in rust
 
 ////////none
+for (let i = 0; i < 100; i++) { } // c for construction
 
 const fruits = ['apples', 'bananas', 'cherries'];
 for (const fruit of fruits) {
   console.log(fruit);
 }
+let upper = fruits.map(toUpper);
 
+
+const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
+
+const filtered = cats.filter((cat) => cat.startsWith('L'));
+console.log(filtered);
+// [ "Leopard", "Lion" ]
+break;
+continue;
+
+
+while () { }
+do {} while( )
 
 // const resetParas = document.querySelectorAll('.resultParas p');
 
@@ -138,3 +152,5 @@ for (const bird of birds) {
 }
 
 let greeting = ( isBirthday ) ? 'Happy birthday Mrs. Smith — we hope you have a great day!' : 'Good morning Mrs. Smith.';
+
+
