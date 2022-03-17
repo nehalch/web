@@ -65,7 +65,14 @@
     margin: 19px;
     padding: 10px;
 }
-    
+    .tb{
+        border-collapse:collapse;
+        caption-side: bottom;
+        
+    }
+    .tb * {
+        padding: 5px;
+    }
     </style>
 </head>
 
@@ -125,7 +132,8 @@
     </table>
 
     <h2>Relative length units</h2>
-    <table>
+    <table class="tb">
+        <caption>some caption</caption>
         <thead>
             <tr>
                 <th scope="col">Unit</th>
