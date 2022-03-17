@@ -163,6 +163,31 @@
             section.appendChild(paras);
         </script>
     </div>
+    <div>
+        <section class="preview3">
+        </section>
+
+        <script>
+            let i = 500;
+            const para3 = document.createElement('p');
+
+            function isPrime(num) {
+                for (let i = 2; i < num; i++) {
+                    if (num % i === 0) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+            for (let i = 2; i < 500; i++){
+                if (isPrime(i)){
+                    para3.textContent = para3.textContent + String(i) + ", ";
+                }
+            }
+            const section3 = document.querySelector('section.preview3');
+            section3.appendChild(para3);
+        </script>
+    </div>
 </body>
 
 </html>
