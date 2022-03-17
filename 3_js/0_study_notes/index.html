@@ -54,18 +54,18 @@
     </div>
     <div>
         <button class="str_btn">Press me</button>
+
+        <script>
+            const button = document.querySelector('.str_btn');
+            function greet() {
+                const name = prompt('What is your name?');
+                alert(`Hello ${name}, nice to see you!`);
+            }
+
+            button.addEventListener('click', greet);
+
+        </script>
     </div>
-    <script>
-        const button = document.querySelector('.str_btn');
-        function greet() {
-            const name = prompt('What is your name?');
-            alert(`Hello ${name}, nice to see you!`);
-        }
-
-        button.addEventListener('click', greet);
-
-    </script>
-
     <div>
         <label for="weather">Select the weather type today: </label>
         <select id="weather">
@@ -77,56 +77,92 @@
         </select>
 
         <p class="weather"></p>
-    </div>
-    <script>
-        const select = document.querySelector('#weather');
-        const para = document.querySelector('p.weather');
-        select.addEventListener('change', setWeather);
-        function setWeather() {
-            const choice = select.value;
 
-            switch (choice) {
-                case 'sunny':
-                    para.textContent = 'It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.';
-                    break;
-                case 'rainy':
-                    para.textContent = 'Rain is falling outside; take a rain coat and an umbrella, and don\'t stay out for too long.';
-                    break;
-                case 'snowing':
-                    para.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
-                    break;
-                case 'overcast':
-                    para.textContent = 'It isn\'t raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.';
-                    break;
-                default:
-                    para.textContent = '';
+        <script>
+            const select = document.querySelector('#weather');
+            const para = document.querySelector('p.weather');
+            select.addEventListener('change', setWeather);
+            function setWeather() {
+                const choice = select.value;
+
+                switch (choice) {
+                    case 'sunny':
+                        para.textContent = 'It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.';
+                        break;
+                    case 'rainy':
+                        para.textContent = 'Rain is falling outside; take a rain coat and an umbrella, and don\'t stay out for too long.';
+                        break;
+                    case 'snowing':
+                        para.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
+                        break;
+                    case 'overcast':
+                        para.textContent = 'It isn\'t raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.';
+                        break;
+                    default:
+                        para.textContent = '';
+                }
             }
-        }
 
-    </script>
+        </script>
+    </div>
     <div>
         <label for="theme">Select theme: </label>
         <select id="theme">
             <option value="white">White</option>
             <option value="black">Black</option>
         </select>
-        
         <h1>This is my website</h1>
-
-    </div>
-    <script>
-        const bg = document.querySelector('#theme');
+        <script>
+            const bg = document.querySelector('#theme');
             const html = document.querySelector('html');
             document.body.style.padding = '10px';
-
             function update(bgColor, textColor) {
                 html.style.backgroundColor = bgColor;
                 html.style.color = textColor;
             }
-
             bg.addEventListener('change', () => (bg.value === 'black') ? update('black', 'white') : update('white', 'black'));
+        </script>
+    </div>
+    <div>
+        <section class="qq">
+        </section>
+        <script>
+            const myArray = ['tomatoes', 'chick peas', 'onions', 'rice', 'black beans'];
+            const list = document.createElement('ul');
+            for (i of myArray) {
+                let li = document.createElement('li');
+                li.textContent = i;
+                list.appendChild(li);
+            }
+            const section = document.querySelector('section.qq');
+            section.appendChild(list);
+        </script>
+    </div>
+    <div>
+        <section class="preview">
+        </section>
+        <script>
+            const name = 'Mustafa';
+            const paras = document.createElement('p');
 
-    </script>
+            const phonebook = [
+                { name: 'Chris', number: '1549' },
+                { name: 'Li Kang', number: '9634' },
+                { name: 'Anne', number: '9065' },
+                { name: 'Francesca', number: '3001' },
+                { name: 'Mustafa', number: '6888' },
+                { name: 'Tina', number: '4312' },
+                { name: 'Bert', number: '7780' },
+                { name: 'Jada', number: '2282' },
+            ]
+
+            const prepara = phonebook.filter(i => i.name === name);
+            paras.textContent = `${prepara[0].name} ${prepara[0].number}`;
+
+            const section2 = document.querySelector('section.preview');
+            section.appendChild(paras);
+        </script>
+    </div>
 </body>
 
 </html>
