@@ -179,14 +179,35 @@
                 }
                 return true;
             }
-            
-            for (let i = 2; i < 500; i++){
-                if (isPrime(i)){
+
+            for (let i = 2; i < 500; i++) {
+                if (isPrime(i)) {
                     para3.textContent = para3.textContent + String(i) + ", ";
                 }
             }
             const section3 = document.querySelector('section.preview3');
             section3.appendChild(para3);
+        </script>
+    </div>
+    <div>
+        <script>
+            function displayMessage(a) {
+                const body = document.body;
+                const panel = document.createElement('div');
+                panel.setAttribute('class', 'msgBox');
+                body.appendChild(panel);
+                const msg = document.createElement('p');
+                msg.textContent = a;
+                panel.appendChild(msg);
+                const closeBtn = document.createElement('button');
+                closeBtn.textContent = 'x';
+                panel.appendChild(closeBtn);
+                closeBtn.addEventListener('click', () => panel.parentNode.removeChild(panel));
+            }
+
+            displayMessage("123ieojfieorjoj");
+
+
         </script>
     </div>
 </body>
