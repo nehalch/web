@@ -211,11 +211,27 @@
         </script>
     </div>
     <div>
+        envs
+
         web page events
         terminal keys events
         http requesrs handlers
         switches buttons handlers
         action handler (detector action)
+        <button class="event">color</button>
+        <script>
+            const butn = document.querySelector('button.event');
+
+            function random(number) {
+                return Math.floor(Math.random() * (number + 1));
+            }
+
+            butn.addEventListener('click', () => {
+                const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+                html.style.backgroundColor = rndCol;
+            });
+
+        </script>
     </div>
 </body>
 
