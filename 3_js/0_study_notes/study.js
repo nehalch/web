@@ -130,7 +130,7 @@ arr. push return length
 cities.unshift('Edinburgh'); //push as first item;
 cities.shift(); // remove first element
 cities.splice(index, 2); // remove index + 1 el
-arr. forEach()
+arr. forEach(callback)
 
 .pop //delete last item
 
